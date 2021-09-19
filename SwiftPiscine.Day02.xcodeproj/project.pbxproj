@@ -13,6 +13,29 @@
 		3E79D98726F60EB70064C819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98526F60EB70064C819 /* Main.storyboard */; };
 		3E79D98926F60EBB0064C819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98826F60EBB0064C819 /* Assets.xcassets */; };
 		3E79D98C26F60EBB0064C819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98A26F60EBB0064C819 /* LaunchScreen.storyboard */; };
+		3E79D9B926F6108F0064C819 /* DeathNoteScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9AE26F6108F0064C819 /* DeathNoteScreenInteractor.swift */; };
+		3E79D9BA26F6108F0064C819 /* DeathNoteScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9B026F6108F0064C819 /* DeathNoteScreenContract.swift */; };
+		3E79D9BB26F6108F0064C819 /* DeathNoteScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9B226F6108F0064C819 /* DeathNoteScreenPresenter.swift */; };
+		3E79D9BC26F6108F0064C819 /* DeathNoteScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9B426F6108F0064C819 /* DeathNoteScreenAssembly.swift */; };
+		3E79D9BD26F6108F0064C819 /* DeathNoteScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9B626F6108F0064C819 /* DeathNoteScreenRouter.swift */; };
+		3E79D9BE26F6108F0064C819 /* DeathNoteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9B826F6108F0064C819 /* DeathNoteScreenViewController.swift */; };
+		3E84BF7726F614D900AA1E97 /* DeathNoteScreenPresenterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF7626F614D900AA1E97 /* DeathNoteScreenPresenterDataSource.swift */; };
+		3E84BF9526F616C700AA1E97 /* AddNoteScreenAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF8A26F616C700AA1E97 /* AddNoteScreenAssembly.swift */; };
+		3E84BF9626F616C700AA1E97 /* AddNoteScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF8C26F616C700AA1E97 /* AddNoteScreenPresenter.swift */; };
+		3E84BF9726F616C700AA1E97 /* AddNoteScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF8E26F616C700AA1E97 /* AddNoteScreenRouter.swift */; };
+		3E84BF9826F616C700AA1E97 /* AddNoteScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF9026F616C700AA1E97 /* AddNoteScreenViewController.swift */; };
+		3E84BF9926F616C700AA1E97 /* AddNoteScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF9226F616C700AA1E97 /* AddNoteScreenInteractor.swift */; };
+		3E84BF9A26F616C700AA1E97 /* AddNoteScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BF9426F616C700AA1E97 /* AddNoteScreenContract.swift */; };
+		3E84BFFE26F6304E00AA1E97 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84BFFD26F6304E00AA1E97 /* UIImage+Ext.swift */; };
+		3E84C01226F673B400AA1E97 /* PersonCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C00D26F673B400AA1E97 /* PersonCellModel.swift */; };
+		3E84C01326F673B400AA1E97 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C00E26F673B400AA1E97 /* PersonCell.swift */; };
+		3E84C01426F673B400AA1E97 /* PersonSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01026F673B400AA1E97 /* PersonSectionModel.swift */; };
+		3E84C01526F673B400AA1E97 /* TableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01126F673B400AA1E97 /* TableViewContract.swift */; };
+		3E84C01826F6749400AA1E97 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01726F6749400AA1E97 /* Cell.swift */; };
+		3E90DFCE26F67F210039FB48 /* WeatherAppContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */; };
+		3E90DFD126F6A6C00039FB48 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */; };
+		3E90DFD826F77E0B0039FB48 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */; };
+		3E90DFDC26F789900039FB48 /* ClearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFDB26F789900039FB48 /* ClearCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +47,29 @@
 		3E79D98826F60EBB0064C819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E79D98B26F60EBB0064C819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E79D98D26F60EBB0064C819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E79D9AE26F6108F0064C819 /* DeathNoteScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenInteractor.swift; sourceTree = "<group>"; };
+		3E79D9B026F6108F0064C819 /* DeathNoteScreenContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenContract.swift; sourceTree = "<group>"; };
+		3E79D9B226F6108F0064C819 /* DeathNoteScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenPresenter.swift; sourceTree = "<group>"; };
+		3E79D9B426F6108F0064C819 /* DeathNoteScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenAssembly.swift; sourceTree = "<group>"; };
+		3E79D9B626F6108F0064C819 /* DeathNoteScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenRouter.swift; sourceTree = "<group>"; };
+		3E79D9B826F6108F0064C819 /* DeathNoteScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenViewController.swift; sourceTree = "<group>"; };
+		3E84BF7626F614D900AA1E97 /* DeathNoteScreenPresenterDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathNoteScreenPresenterDataSource.swift; sourceTree = "<group>"; };
+		3E84BF8A26F616C700AA1E97 /* AddNoteScreenAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenAssembly.swift; sourceTree = "<group>"; };
+		3E84BF8C26F616C700AA1E97 /* AddNoteScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenPresenter.swift; sourceTree = "<group>"; };
+		3E84BF8E26F616C700AA1E97 /* AddNoteScreenRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenRouter.swift; sourceTree = "<group>"; };
+		3E84BF9026F616C700AA1E97 /* AddNoteScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenViewController.swift; sourceTree = "<group>"; };
+		3E84BF9226F616C700AA1E97 /* AddNoteScreenInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenInteractor.swift; sourceTree = "<group>"; };
+		3E84BF9426F616C700AA1E97 /* AddNoteScreenContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteScreenContract.swift; sourceTree = "<group>"; };
+		3E84BFFD26F6304E00AA1E97 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		3E84C00D26F673B400AA1E97 /* PersonCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCellModel.swift; sourceTree = "<group>"; };
+		3E84C00E26F673B400AA1E97 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		3E84C01026F673B400AA1E97 /* PersonSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSectionModel.swift; sourceTree = "<group>"; };
+		3E84C01126F673B400AA1E97 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
+		3E84C01726F6749400AA1E97 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAppContract.swift; sourceTree = "<group>"; };
+		3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
+		3E90DFDB26F789900039FB48 /* ClearCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,9 @@
 		3E79D97E26F60EB70064C819 /* SwiftPiscine.Day02 */ = {
 			isa = PBXGroup;
 			children = (
+				3E90DFCC26F67F210039FB48 /* Contract */,
+				3E84C00A26F673B400AA1E97 /* Components */,
+				3E79D9A226F60FA10064C819 /* Modules */,
 				3E79D97F26F60EB70064C819 /* AppDelegate.swift */,
 				3E79D98126F60EB70064C819 /* SceneDelegate.swift */,
 				3E79D98326F60EB70064C819 /* ViewController.swift */,
@@ -65,6 +114,194 @@
 				3E79D98D26F60EBB0064C819 /* Info.plist */,
 			);
 			path = SwiftPiscine.Day02;
+			sourceTree = "<group>";
+		};
+		3E79D9A226F60FA10064C819 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9A326F60FA90064C819 /* DeathNoteScreen */,
+				3E84BF8826F616A100AA1E97 /* AddNoteScreen */,
+				3E84BFFC26F6303700AA1E97 /* Extentions */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3E79D9A326F60FA90064C819 /* DeathNoteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B326F6108F0064C819 /* Assembly */,
+				3E79D9AF26F6108F0064C819 /* Contract */,
+				3E79D9AD26F6108F0064C819 /* Interactor */,
+				3E79D9B126F6108F0064C819 /* Presenter */,
+				3E79D9B526F6108F0064C819 /* Router */,
+				3E79D9B726F6108F0064C819 /* View */,
+			);
+			path = DeathNoteScreen;
+			sourceTree = "<group>";
+		};
+		3E79D9AD26F6108F0064C819 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9AE26F6108F0064C819 /* DeathNoteScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E79D9AF26F6108F0064C819 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B026F6108F0064C819 /* DeathNoteScreenContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3E79D9B126F6108F0064C819 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B226F6108F0064C819 /* DeathNoteScreenPresenter.swift */,
+				3E84BF7626F614D900AA1E97 /* DeathNoteScreenPresenterDataSource.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E79D9B326F6108F0064C819 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B426F6108F0064C819 /* DeathNoteScreenAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E79D9B526F6108F0064C819 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B626F6108F0064C819 /* DeathNoteScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E79D9B726F6108F0064C819 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E79D9B826F6108F0064C819 /* DeathNoteScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E84BF8826F616A100AA1E97 /* AddNoteScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF8926F616C700AA1E97 /* Assembly */,
+				3E84BF9326F616C700AA1E97 /* Contract */,
+				3E84BF9126F616C700AA1E97 /* Interactor */,
+				3E84BF8B26F616C700AA1E97 /* Presenter */,
+				3E84BF8D26F616C700AA1E97 /* Router */,
+				3E84BF8F26F616C700AA1E97 /* View */,
+			);
+			path = AddNoteScreen;
+			sourceTree = "<group>";
+		};
+		3E84BF8926F616C700AA1E97 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF8A26F616C700AA1E97 /* AddNoteScreenAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3E84BF8B26F616C700AA1E97 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF8C26F616C700AA1E97 /* AddNoteScreenPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3E84BF8D26F616C700AA1E97 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF8E26F616C700AA1E97 /* AddNoteScreenRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3E84BF8F26F616C700AA1E97 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF9026F616C700AA1E97 /* AddNoteScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E84BF9126F616C700AA1E97 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF9226F616C700AA1E97 /* AddNoteScreenInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E84BF9326F616C700AA1E97 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BF9426F616C700AA1E97 /* AddNoteScreenContract.swift */,
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		3E84BFFC26F6303700AA1E97 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3E84BFFD26F6304E00AA1E97 /* UIImage+Ext.swift */,
+				3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */,
+				3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		3E84C00A26F673B400AA1E97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3E84C00B26F673B400AA1E97 /* UITableViewComponents */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3E84C00B26F673B400AA1E97 /* UITableViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3E84C00C26F673B400AA1E97 /* Cells */,
+				3E84C00F26F673B400AA1E97 /* Sections */,
+				3E84C01126F673B400AA1E97 /* TableViewContract.swift */,
+			);
+			path = UITableViewComponents;
+			sourceTree = "<group>";
+		};
+		3E84C00C26F673B400AA1E97 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3E84C01726F6749400AA1E97 /* Cell.swift */,
+				3E84C00D26F673B400AA1E97 /* PersonCellModel.swift */,
+				3E84C00E26F673B400AA1E97 /* PersonCell.swift */,
+				3E90DFDB26F789900039FB48 /* ClearCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3E84C00F26F673B400AA1E97 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				3E84C01026F673B400AA1E97 /* PersonSectionModel.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		3E90DFCC26F67F210039FB48 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +374,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E84BF9826F616C700AA1E97 /* AddNoteScreenViewController.swift in Sources */,
+				3E79D9BE26F6108F0064C819 /* DeathNoteScreenViewController.swift in Sources */,
+				3E84C01526F673B400AA1E97 /* TableViewContract.swift in Sources */,
+				3E90DFD126F6A6C00039FB48 /* Date+Ext.swift in Sources */,
+				3E84C01326F673B400AA1E97 /* PersonCell.swift in Sources */,
+				3E84C01826F6749400AA1E97 /* Cell.swift in Sources */,
+				3E79D9BC26F6108F0064C819 /* DeathNoteScreenAssembly.swift in Sources */,
+				3E90DFCE26F67F210039FB48 /* WeatherAppContract.swift in Sources */,
+				3E84BF9A26F616C700AA1E97 /* AddNoteScreenContract.swift in Sources */,
+				3E84BFFE26F6304E00AA1E97 /* UIImage+Ext.swift in Sources */,
+				3E79D9BD26F6108F0064C819 /* DeathNoteScreenRouter.swift in Sources */,
+				3E90DFD826F77E0B0039FB48 /* DateFormatter+Ext.swift in Sources */,
+				3E84C01226F673B400AA1E97 /* PersonCellModel.swift in Sources */,
+				3E84C01426F673B400AA1E97 /* PersonSectionModel.swift in Sources */,
+				3E79D9B926F6108F0064C819 /* DeathNoteScreenInteractor.swift in Sources */,
 				3E79D98426F60EB70064C819 /* ViewController.swift in Sources */,
+				3E84BF9726F616C700AA1E97 /* AddNoteScreenRouter.swift in Sources */,
+				3E84BF9526F616C700AA1E97 /* AddNoteScreenAssembly.swift in Sources */,
+				3E84BF9626F616C700AA1E97 /* AddNoteScreenPresenter.swift in Sources */,
+				3E90DFDC26F789900039FB48 /* ClearCell.swift in Sources */,
+				3E79D9BA26F6108F0064C819 /* DeathNoteScreenContract.swift in Sources */,
+				3E79D9BB26F6108F0064C819 /* DeathNoteScreenPresenter.swift in Sources */,
 				3E79D98026F60EB70064C819 /* AppDelegate.swift in Sources */,
+				3E84BF7726F614D900AA1E97 /* DeathNoteScreenPresenterDataSource.swift in Sources */,
 				3E79D98226F60EB70064C819 /* SceneDelegate.swift in Sources */,
+				3E84BF9926F616C700AA1E97 /* AddNoteScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
