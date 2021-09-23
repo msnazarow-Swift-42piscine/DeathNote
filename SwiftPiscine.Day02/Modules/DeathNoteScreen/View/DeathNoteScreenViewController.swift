@@ -3,17 +3,18 @@
 //  SwiftPiscine.Day02
 //
 //  Created by out-nazarov2-ms on 18.09.2021.
-//  
+//
 //
 
 import UIKit
 
 class DeathNoteScreenViewController: UITableViewController {
-
     // MARK: - Properties
+
     var presenter: ViewToPresenterDeathNoteScreenProtocol?
 
     // MARK: - Lifecycle Methods
+
     override func viewDidLoad() {
         guard let presenter = presenter else {
             print("DeathNoteScreenViewController Assembly Error")
@@ -31,20 +32,18 @@ class DeathNoteScreenViewController: UITableViewController {
         title = "Death Note"
         tableView.backgroundColor = .clear
         tableView.overrideUserInterfaceStyle = .light
-//        tableView.estimatedRowHeight = 10
-//        tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
         navigationItem.rightBarButtonItem = .init(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
     }
 
-    @objc private func addButtonTapped(){
+    @objc private func addButtonTapped() {
         presenter?.addButtonTapped()
     }
 }
 
-extension DeathNoteScreenViewController: PresenterToViewDeathNoteScreenProtocol{
+extension DeathNoteScreenViewController: PresenterToViewDeathNoteScreenProtocol {
     // TODO: Implement View Output Methods
-    func update(){
+    func update() {
         tableView.reloadData()
     }
 }

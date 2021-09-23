@@ -8,20 +8,18 @@
 import UIKit
 
 final class ClearCell: Cell {
-
     static let identifier = "ClearCell"
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        translatesAutoresizingMaskIntoConstraints = false
-        let constraint = contentView.heightAnchor.constraint(equalToConstant: 10)
+        let constraint = contentView.heightAnchor.constraint(equalToConstant: 10 * verticalTranslation)
         constraint.priority = UILayoutPriority(rawValue: 999)
         constraint.isActive = true
         backgroundColor = .clear
     }
 
-    required init?(coder: NSCoder) {
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
 }

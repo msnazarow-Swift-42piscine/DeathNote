@@ -8,19 +8,20 @@
 import UIKit
 
 final class PersonCell: Cell {
-
     static let identifier = "PersonCell"
 
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 20 * verticalTranslation)
+        label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
         return label
     }()
 
     let dateLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.font = .systemFont(ofSize: 15)
+        label.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+        label.font = .systemFont(ofSize: 15 * verticalTranslation)
         return label
     }()
 
@@ -39,12 +40,11 @@ final class PersonCell: Cell {
 
     let gap = CGFloat(10)
 
-
-    override init(style : UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         contentView.addSubview(hstack)
         contentView.addSubview(descriptionLabel)
-        contentView.backgroundColor = UIColor(patternImage: #imageLiteral(resourceName: "OldPaper"))
+        contentView.backgroundColor = UIColor(patternImage: .paper)
         NSLayoutConstraint.activate([
             hstack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: gap),
             hstack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: gap),
@@ -52,7 +52,7 @@ final class PersonCell: Cell {
             descriptionLabel.topAnchor.constraint(equalTo: hstack.bottomAnchor, constant: 2 * gap),
             descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: gap),
             descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -gap),
-            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2 * gap)
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2 * gap),
         ])
     }
 
@@ -69,6 +69,6 @@ final class PersonCell: Cell {
         nameLabel.text = model.name
         nameLabel.textAlignment = .justified
         dateLabel.text = model.date
-        descriptionLabel.text  = model.description
+        descriptionLabel.text = model.description
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension Date {
-    var iso8601String : String {
+    var iso8601String: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd MMMM yyyy HH:mm:ss"
         return formatter.string(from: self)

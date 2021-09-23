@@ -3,16 +3,15 @@
 //  SwiftPiscine.Day02
 //
 //  Created by out-nazarov2-ms on 18.09.2021.
-//  
+//
 //
 
 import UIKit
 
-enum DeathNoteScreenAssembly{
-    
+enum DeathNoteScreenAssembly {
     // MARK: Static methods
-    static func createModule() -> UIViewController {
 
+    static func createModule() -> UIViewController {
         let viewController = DeathNoteScreenViewController()
         let router = DeathNoteScreenRouter(view: viewController)
         let interactor = DeathNoteScreenInteractor()

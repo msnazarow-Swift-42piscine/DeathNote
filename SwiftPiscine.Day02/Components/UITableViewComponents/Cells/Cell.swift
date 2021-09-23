@@ -8,7 +8,6 @@
 import UIKit
 
 class Cell: UITableViewCell, ModelRepresentable {
-    
     var model: CellIdentifiable? {
         didSet {
             updateViews()

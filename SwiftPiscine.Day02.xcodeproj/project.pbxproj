@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -105,6 +105,7 @@
 				3E90DFCC26F67F210039FB48 /* Contract */,
 				3E84C00A26F673B400AA1E97 /* Components */,
 				3E79D9A226F60FA10064C819 /* Modules */,
+				3E84BFFC26F6303700AA1E97 /* Extentions */,
 				3E79D97F26F60EB70064C819 /* AppDelegate.swift */,
 				3E79D98126F60EB70064C819 /* SceneDelegate.swift */,
 				3E79D98326F60EB70064C819 /* ViewController.swift */,
@@ -121,7 +122,6 @@
 			children = (
 				3E79D9A326F60FA90064C819 /* DeathNoteScreen */,
 				3E84BF8826F616A100AA1E97 /* AddNoteScreen */,
-				3E84BFFC26F6303700AA1E97 /* Extentions */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -314,6 +314,8 @@
 				3E79D97826F60EB70064C819 /* Sources */,
 				3E79D97926F60EB70064C819 /* Frameworks */,
 				3E79D97A26F60EB70064C819 /* Resources */,
+				3E1A5B4526FCE8CF00AE39E2 /* Swiftlint check */,
+				3E1A5B4626FCE90F00AE39E2 /* Swiftlint autocorrect */,
 			);
 			buildRules = (
 			);
@@ -368,6 +370,46 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E1A5B4526FCE8CF00AE39E2 /* Swiftlint check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint check";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPATH=/opt/homebrew/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+		3E1A5B4626FCE90F00AE39E2 /* Swiftlint autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint >/dev/null; then\n      swiftformat && swiftlint --fix --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E79D97826F60EB70064C819 /* Sources */ = {
