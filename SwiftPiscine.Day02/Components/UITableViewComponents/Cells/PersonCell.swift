@@ -52,7 +52,7 @@ final class PersonCell: Cell {
             descriptionLabel.topAnchor.constraint(equalTo: hstack.bottomAnchor, constant: 2 * gap),
             descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: gap),
             descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -gap),
-            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2 * gap),
+            descriptionLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -2 * gap)
         ])
     }
 

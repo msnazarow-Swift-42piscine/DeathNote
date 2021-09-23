@@ -17,7 +17,7 @@ class DeathNoteScreenPresenterDataSource: NSObject, DataSourceDeathNoteScreenPro
                     description: "Got poisoned."),
         PersonModel(name: "Ben Solo",
                     date: DateFormatter.ddmmmmyyyy.date(from: "12 July 2016 05:29:18")!,
-                    description: "Killed by Snoke."),
+                    description: "Killed by Snoke.")
     ])]
 
     func numberOfSections(in _: UITableView) -> Int {

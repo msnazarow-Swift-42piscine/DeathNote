@@ -49,7 +49,7 @@ class AddNoteScreenViewController: UIViewController {
 
     private func setupUI() {
         title = "Add a Person"
-        view.backgroundColor = UIColor(patternImage: .paper.resizedImage(newHeight: view.frame.height)!)
+        view.backgroundColor = UIColor(patternImage: UIImage.paper.resizedImage(newHeight: view.frame.height)!)
         view.overrideUserInterfaceStyle = .light
         navigationController?.navigationBar.barTintColor = .black
         navigationController?.navigationBar.backgroundColor = .black
@@ -74,7 +74,7 @@ class AddNoteScreenViewController: UIViewController {
             datePicker.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 10),
             datePicker.heightAnchor.constraint(equalToConstant: 100 * verticalTranslation),
             descriptionTextField.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: 10),
-            descriptionTextField.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.25),
+            descriptionTextField.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.25)
         ])
     }
 
