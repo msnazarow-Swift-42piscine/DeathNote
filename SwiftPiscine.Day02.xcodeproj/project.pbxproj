@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E476C3F27789AD600DB2B73 /* UIWindow+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E476C3E27789AD600DB2B73 /* UIWindow+Ext.swift */; };
 		3E79D98026F60EB70064C819 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D97F26F60EB70064C819 /* AppDelegate.swift */; };
 		3E79D98226F60EB70064C819 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D98126F60EB70064C819 /* SceneDelegate.swift */; };
-		3E79D98426F60EB70064C819 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D98326F60EB70064C819 /* ViewController.swift */; };
-		3E79D98726F60EB70064C819 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98526F60EB70064C819 /* Main.storyboard */; };
 		3E79D98926F60EBB0064C819 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98826F60EBB0064C819 /* Assets.xcassets */; };
 		3E79D98C26F60EBB0064C819 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E79D98A26F60EBB0064C819 /* LaunchScreen.storyboard */; };
 		3E79D9B926F6108F0064C819 /* DeathNoteScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E79D9AE26F6108F0064C819 /* DeathNoteScreenInteractor.swift */; };
@@ -32,18 +31,17 @@
 		3E84C01426F673B400AA1E97 /* PersonSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01026F673B400AA1E97 /* PersonSectionModel.swift */; };
 		3E84C01526F673B400AA1E97 /* TableViewContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01126F673B400AA1E97 /* TableViewContract.swift */; };
 		3E84C01826F6749400AA1E97 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E84C01726F6749400AA1E97 /* Cell.swift */; };
-		3E90DFCE26F67F210039FB48 /* WeatherAppContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */; };
+		3E90DFCE26F67F210039FB48 /* DeathNoteContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFCD26F67F210039FB48 /* DeathNoteContract.swift */; };
 		3E90DFD126F6A6C00039FB48 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */; };
 		3E90DFD826F77E0B0039FB48 /* DateFormatter+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */; };
 		3E90DFDC26F789900039FB48 /* ClearCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E90DFDB26F789900039FB48 /* ClearCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E476C3E27789AD600DB2B73 /* UIWindow+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Ext.swift"; sourceTree = "<group>"; };
 		3E79D97C26F60EB70064C819 /* SwiftPiscine.Day02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPiscine.Day02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E79D97F26F60EB70064C819 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E79D98126F60EB70064C819 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3E79D98326F60EB70064C819 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3E79D98626F60EB70064C819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3E79D98826F60EBB0064C819 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E79D98B26F60EBB0064C819 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E79D98D26F60EBB0064C819 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +64,7 @@
 		3E84C01026F673B400AA1E97 /* PersonSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonSectionModel.swift; sourceTree = "<group>"; };
 		3E84C01126F673B400AA1E97 /* TableViewContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewContract.swift; sourceTree = "<group>"; };
 		3E84C01726F6749400AA1E97 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
-		3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAppContract.swift; sourceTree = "<group>"; };
+		3E90DFCD26F67F210039FB48 /* DeathNoteContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeathNoteContract.swift; sourceTree = "<group>"; };
 		3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Ext.swift"; sourceTree = "<group>"; };
 		3E90DFDB26F789900039FB48 /* ClearCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearCell.swift; sourceTree = "<group>"; };
@@ -108,8 +106,6 @@
 				3E84BFFC26F6303700AA1E97 /* Extentions */,
 				3E79D97F26F60EB70064C819 /* AppDelegate.swift */,
 				3E79D98126F60EB70064C819 /* SceneDelegate.swift */,
-				3E79D98326F60EB70064C819 /* ViewController.swift */,
-				3E79D98526F60EB70064C819 /* Main.storyboard */,
 				3E79D98826F60EBB0064C819 /* Assets.xcassets */,
 				3E79D98A26F60EBB0064C819 /* LaunchScreen.storyboard */,
 				3E79D98D26F60EBB0064C819 /* Info.plist */,
@@ -252,6 +248,7 @@
 		3E84BFFC26F6303700AA1E97 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				3E476C3E27789AD600DB2B73 /* UIWindow+Ext.swift */,
 				3E84BFFD26F6304E00AA1E97 /* UIImage+Ext.swift */,
 				3E90DFD026F6A6C00039FB48 /* Date+Ext.swift */,
 				3E90DFD726F77E0B0039FB48 /* DateFormatter+Ext.swift */,
@@ -299,7 +296,7 @@
 		3E90DFCC26F67F210039FB48 /* Contract */ = {
 			isa = PBXGroup;
 			children = (
-				3E90DFCD26F67F210039FB48 /* WeatherAppContract.swift */,
+				3E90DFCD26F67F210039FB48 /* DeathNoteContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -365,7 +362,6 @@
 			files = (
 				3E79D98C26F60EBB0064C819 /* LaunchScreen.storyboard in Resources */,
 				3E79D98926F60EBB0064C819 /* Assets.xcassets in Resources */,
-				3E79D98726F60EB70064C819 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +419,7 @@
 				3E84C01326F673B400AA1E97 /* PersonCell.swift in Sources */,
 				3E84C01826F6749400AA1E97 /* Cell.swift in Sources */,
 				3E79D9BC26F6108F0064C819 /* DeathNoteScreenAssembly.swift in Sources */,
-				3E90DFCE26F67F210039FB48 /* WeatherAppContract.swift in Sources */,
+				3E90DFCE26F67F210039FB48 /* DeathNoteContract.swift in Sources */,
 				3E84BF9A26F616C700AA1E97 /* AddNoteScreenContract.swift in Sources */,
 				3E84BFFE26F6304E00AA1E97 /* UIImage+Ext.swift in Sources */,
 				3E79D9BD26F6108F0064C819 /* DeathNoteScreenRouter.swift in Sources */,
@@ -431,11 +427,11 @@
 				3E84C01226F673B400AA1E97 /* PersonCellModel.swift in Sources */,
 				3E84C01426F673B400AA1E97 /* PersonSectionModel.swift in Sources */,
 				3E79D9B926F6108F0064C819 /* DeathNoteScreenInteractor.swift in Sources */,
-				3E79D98426F60EB70064C819 /* ViewController.swift in Sources */,
 				3E84BF9726F616C700AA1E97 /* AddNoteScreenRouter.swift in Sources */,
 				3E84BF9526F616C700AA1E97 /* AddNoteScreenAssembly.swift in Sources */,
 				3E84BF9626F616C700AA1E97 /* AddNoteScreenPresenter.swift in Sources */,
 				3E90DFDC26F789900039FB48 /* ClearCell.swift in Sources */,
+				3E476C3F27789AD600DB2B73 /* UIWindow+Ext.swift in Sources */,
 				3E79D9BA26F6108F0064C819 /* DeathNoteScreenContract.swift in Sources */,
 				3E79D9BB26F6108F0064C819 /* DeathNoteScreenPresenter.swift in Sources */,
 				3E79D98026F60EB70064C819 /* AppDelegate.swift in Sources */,
@@ -448,14 +444,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3E79D98526F60EB70064C819 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3E79D98626F60EB70064C819 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3E79D98A26F60EBB0064C819 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

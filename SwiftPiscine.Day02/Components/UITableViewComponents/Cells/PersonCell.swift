@@ -42,6 +42,7 @@ final class PersonCell: Cell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .clear
         contentView.addSubview(hstack)
         contentView.addSubview(descriptionLabel)
         contentView.backgroundColor = UIColor(patternImage: .paper)

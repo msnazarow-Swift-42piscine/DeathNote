@@ -22,14 +22,15 @@ class AddNoteScreenViewController: UIViewController {
         return textField
     }()
 
-    lazy var descriptionTextField: UITextView = {
-        let textField = UITextView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.25))
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.textAlignment = .center
-        textField.layer.borderWidth = 1
-        textField.font = .systemFont(ofSize: 20 * verticalTranslation)
-        textField.backgroundColor = .clear
-        return textField
+    lazy var descriptionTextView: UITextView = {
+        let textView = UITextView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: view.bounds.height * 0.25))
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.textAlignment = .center
+        textView.layer.borderWidth = 1
+        textView.font = .systemFont(ofSize: 20 * verticalTranslation)
+        textView.backgroundColor = .clear
+        textView.isScrollEnabled = false
+        return textView
     }()
 
     let datePicker: UIDatePicker = {
@@ -40,11 +41,20 @@ class AddNoteScreenViewController: UIViewController {
         return datePicker
     }()
 
+    let scrollView: UIScrollView = {
+        let view = UIScrollView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+
+    var footerConstraint: NSLayoutConstraint!
+
     // MARK: - Lifecycle Methods
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        subscribeKeyboardNotifications()
     }
 
     private func setupUI() {
@@ -59,27 +69,38 @@ class AddNoteScreenViewController: UIViewController {
     }
 
     private func addSubviews() {
-        view.addSubview(nameTextField)
-        view.addSubview(descriptionTextField)
-        view.addSubview(datePicker)
+        view.addSubview(scrollView)
+        scrollView.addSubview(nameTextField)
+        scrollView.addSubview(descriptionTextView)
+        scrollView.addSubview(datePicker)
     }
 
     private func setupConstraints() {
+        footerConstraint = scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: 0)
         NSLayoutConstraint.activate([
-            nameTextField.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
-            descriptionTextField.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
-            datePicker.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor),
-            nameTextField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            scrollView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            scrollView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            footerConstraint,
+
+            nameTextField.widthAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.widthAnchor),
+            nameTextField.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
             nameTextField.heightAnchor.constraint(equalToConstant: 40 * verticalTranslation),
+            nameTextField.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+
             datePicker.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 10),
-            datePicker.heightAnchor.constraint(equalToConstant: 100 * verticalTranslation),
-            descriptionTextField.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: 10),
-            descriptionTextField.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.25)
+            datePicker.heightAnchor.constraint(equalToConstant: 120 * verticalTranslation),
+            datePicker.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor),
+
+            descriptionTextView.widthAnchor.constraint(equalTo: scrollView.safeAreaLayoutGuide.widthAnchor),
+            descriptionTextView.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: 10),
+            descriptionTextView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
+            descriptionTextView.centerXAnchor.constraint(equalTo: scrollView.centerXAnchor)
         ])
     }
 
     @objc private func doneButtonTapped() {
-        presenter?.savePersonDeath(name: nameTextField.text, date: datePicker.date, description: descriptionTextField.text)
+        presenter?.savePersonDeath(name: nameTextField.text, date: datePicker.date, description: descriptionTextView.text)
     }
 }
 
@@ -88,5 +109,33 @@ extension AddNoteScreenViewController: PresenterToViewAddNoteScreenProtocol {
         let alert = UIAlertController(title: "Warning", message: "The human cannot die if you don't know his name", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alert, animated: true)
+    }
+}
+
+extension AddNoteScreenViewController {
+    private func subscribeKeyboardNotifications() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(keyboardWillHide),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(keyboardWillShow),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+    }
+
+    @objc private func keyboardWillShow(_ notification: Notification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            footerConstraint.constant = -keyboardSize.height
+        }
+    }
+
+    @objc private func keyboardWillHide(_ notification: Notification) {
+        footerConstraint.constant = 0
     }
 }
